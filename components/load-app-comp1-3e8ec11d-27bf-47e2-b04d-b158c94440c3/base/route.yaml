@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: load-app-comp1-3e8ec11d-27bf-47e2-b04d-b158c94440c3
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: load-app-comp1-3e8ec11d-27bf-47e2-b04d-b158c94440c3
+    app.kubernetes.io/part-of: load-app-3e8ec11d-27bf-47e2-b04d-b158c94440c3
+  name: load-app-comp1-3e8ec11d-27bf-47e2-b04d-b158c94440c3
+  namespace: load-253da8fa-d97e-4f24-ab58-4bba1e37d967-tenant
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: load-app-comp1-3e8ec11d-27bf-47e2-b04d-b158c94440c3
+    weight: null
+status: {}
