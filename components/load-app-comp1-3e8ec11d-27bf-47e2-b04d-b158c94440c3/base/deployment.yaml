@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: load-app-comp1-3e8ec11d-27bf-47e2-b04d-b158c94440c3
     spec:
       containers:
-      - image: quay.io/stonesoup_perfscale/test-images:63c57d347ac442df93add17af9f54e93
+      - image: quay.io/stonesoup_perfscale/test-images@sha256:a64fe0dc7afe8bff975daeb708c18f3fcc40506aef0062546afbb8d4fde3207a
         name: my-python
         ports:
         - containerPort: 8081
