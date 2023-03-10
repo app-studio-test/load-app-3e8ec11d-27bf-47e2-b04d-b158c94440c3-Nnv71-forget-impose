@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: load-app-comp1-3e8ec11d-27bf-47e2-b04d-b158c94440c3
+  namespace: load-253da8fa-d97e-4f24-ab58-4bba1e37d967-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/test-images@sha256:a64fe0dc7afe8bff975daeb708c18f3fcc40506aef0062546afbb8d4fde3207a
+        name: my-python
+        resources: {}
+status: {}
